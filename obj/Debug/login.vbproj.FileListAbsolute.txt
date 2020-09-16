@@ -1,0 +1,12 @@
+C:\Users\manow\Desktop\VB Projects\login\bin\Debug\login.exe.config
+C:\Users\manow\Desktop\VB Projects\login\bin\Debug\login.exe
+C:\Users\manow\Desktop\VB Projects\login\bin\Debug\login.pdb
+C:\Users\manow\Desktop\VB Projects\login\bin\Debug\login.xml
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.vbprojAssemblyReference.cache
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.Form1.resources
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.Resources.resources
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.vbproj.GenerateResource.cache
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.vbproj.CoreCompileInputs.cache
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.exe
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.xml
+C:\Users\manow\Desktop\VB Projects\login\obj\Debug\login.pdb
