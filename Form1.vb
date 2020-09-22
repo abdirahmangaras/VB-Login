@@ -24,34 +24,50 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Timer1.Start()
+
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        ProgressBar1.Increment(10)
+
+        If ProgressBar1.Value = 100 Then
+            Timer1.Stop()
+
+
+            If TextBox1.Text <> "amadi@123.com" Then
+
+                MsgBox(" Fadlan Email Sax Soo Gali")
+                TextBox1.Focus()
+                ProgressBar1.Value = 0
+
+            ElseIf TextBox1.Text = "" Then
+
+                MsgBox(" Fadlan Email soo gali")
+                TextBox1.Focus()
+                ProgressBar1.Value = 0
+
+            ElseIf TextBox2.Text <> "1234" Then
+
+                MsgBox(" Fadlan password sax soo gali")
+                TextBox2.Focus()
+                ProgressBar1.Value = 0
+
+            ElseIf TextBox2.Text = "" Then
+
+                MsgBox("Fadlan Password Soo gali...")
+                TextBox2.Focus()
+                ProgressBar1.Value = 0
+
+
+            Else
+                MsgBox(" Waad Ku Mahadsan Tahay Inaad Soo Gashid!!!!!!")
+                ProgressBar1.Value = 0
 
 
 
-        If TextBox1.Text <> "amadi@123.com" Then
-
-            MsgBox(" Fadlan Email Sax Soo Gali")
-
-        ElseIf TextBox1.Text = "" Then
-
-            MsgBox(" Fadlan Email soo gali")
-
-        ElseIf TextBox2.Text = "" Then
-
-            MsgBox(" Fadlan password soo gali")
-        Else
-            MsgBox(" Waad Ku Mahadsan Tahay Inaad Soo Gashid!")
-
-
-
+            End If
         End If
-
-
-
-
-
-
-
-
-
     End Sub
 End Class
