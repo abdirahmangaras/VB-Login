@@ -69,9 +69,17 @@
 
 
             Else
-                MsgBox(" Waad Ku Mahadsan Tahay Inaad Soo Gashid!!!!!!")
+
                 ProgressBar1.Value = 0
                 Label6.Text = ""
+
+                Me.Hide()
+
+                Dim dashboard As New Dashboard()
+
+
+
+                dashboard.Show()
 
 
 
