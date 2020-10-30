@@ -30,9 +30,17 @@ Public Class Dashboard
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Dim das As New Dashboard()
 
         das.MdiParent = Me
+    End Sub
+
+    Private Sub StatusStrip_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles StatusStrip.ItemClicked
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+
     End Sub
 End Class

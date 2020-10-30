@@ -53,7 +53,7 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Location = New System.Drawing.Point(274, 41)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(269, 288)
+        Me.Panel1.Size = New System.Drawing.Size(313, 346)
         Me.Panel1.TabIndex = 0
         '
         'Label6
@@ -71,7 +71,7 @@ Partial Class Form1
         'ProgressBar1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.Maroon
-        Me.ProgressBar1.Location = New System.Drawing.Point(38, 193)
+        Me.ProgressBar1.Location = New System.Drawing.Point(64, 246)
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(179, 21)
         Me.ProgressBar1.TabIndex = 8
@@ -80,7 +80,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(102, 240)
+        Me.Label5.Location = New System.Drawing.Point(128, 293)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 7
@@ -90,7 +90,7 @@ Partial Class Form1
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(79, 227)
+        Me.Label4.Location = New System.Drawing.Point(105, 280)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 6
@@ -101,9 +101,9 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(201, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(25, 149)
+        Me.Button1.Location = New System.Drawing.Point(29, 189)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(214, 31)
+        Me.Button1.Size = New System.Drawing.Size(242, 31)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "LOGIN"
         Me.Button1.UseVisualStyleBackColor = False
@@ -111,36 +111,38 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(25, 119)
+        Me.TextBox2.Location = New System.Drawing.Point(25, 137)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(215, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(246, 20)
         Me.TextBox2.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(22, 103)
+        Me.Label3.Location = New System.Drawing.Point(26, 121)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 13)
+        Me.Label3.Size = New System.Drawing.Size(68, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Password"
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(25, 70)
+        Me.TextBox1.Location = New System.Drawing.Point(25, 85)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(215, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(246, 20)
         Me.TextBox1.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(22, 54)
+        Me.Label2.Location = New System.Drawing.Point(26, 66)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(32, 13)
+        Me.Label2.Size = New System.Drawing.Size(42, 16)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Email"
         '
@@ -149,7 +151,7 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(201, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(100, 16)
+        Me.Label1.Location = New System.Drawing.Point(117, 14)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(63, 25)
         Me.Label1.TabIndex = 0

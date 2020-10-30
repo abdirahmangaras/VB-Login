@@ -24,9 +24,13 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -41,15 +45,23 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
+        Me.SqlConnection2 = New System.Data.SqlClient.SqlConnection()
         Me.Panel1.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.TextBox4)
+        Me.Panel1.Controls.Add(Me.Label11)
+        Me.Panel1.Controls.Add(Me.ComboBox3)
+        Me.Panel1.Controls.Add(Me.Label10)
+        Me.Panel1.Controls.Add(Me.ComboBox2)
+        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.TextBox3)
         Me.Panel1.Controls.Add(Me.Label7)
@@ -63,65 +75,106 @@ Partial Class Form2
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(364, 3)
+        Me.Panel1.Location = New System.Drawing.Point(496, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(394, 435)
+        Me.Panel1.Size = New System.Drawing.Size(453, 592)
         Me.Panel1.TabIndex = 1
-        '
-        'TextBox5
-        '
-        Me.TextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox5.Location = New System.Drawing.Point(25, 214)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(346, 20)
-        Me.TextBox5.TabIndex = 15
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label9.Location = New System.Drawing.Point(25, 196)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(34, 15)
-        Me.Label9.TabIndex = 14
-        Me.Label9.Text = "Class"
         '
         'TextBox4
         '
         Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox4.Location = New System.Drawing.Point(22, 161)
+        Me.TextBox4.Location = New System.Drawing.Point(24, 417)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(346, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.TextBox4.Size = New System.Drawing.Size(393, 20)
+        Me.TextBox4.TabIndex = 21
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label11.Location = New System.Drawing.Point(23, 396)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(75, 18)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "Password"
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Semister 1", "Semister 2", "Semister 3"})
+        Me.ComboBox3.Location = New System.Drawing.Point(21, 300)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(400, 21)
+        Me.ComboBox3.TabIndex = 19
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label10.Location = New System.Drawing.Point(26, 279)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(46, 18)
+        Me.Label10.TabIndex = 18
+        Me.Label10.Text = "Batch"
+        '
+        'ComboBox2
+        '
+        Me.ComboBox2.FormattingEnabled = True
+        Me.ComboBox2.Items.AddRange(New Object() {"Semister 1", "Semister 2", "Semister 3"})
+        Me.ComboBox2.Location = New System.Drawing.Point(244, 243)
+        Me.ComboBox2.Name = "ComboBox2"
+        Me.ComboBox2.Size = New System.Drawing.Size(173, 21)
+        Me.ComboBox2.TabIndex = 17
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Computing", "Managment", "Medicine"})
+        Me.ComboBox1.Location = New System.Drawing.Point(24, 243)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(173, 21)
+        Me.ComboBox1.TabIndex = 16
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.Label9.Location = New System.Drawing.Point(253, 212)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(67, 18)
+        Me.Label9.TabIndex = 14
+        Me.Label9.Text = "Semister"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label8.Location = New System.Drawing.Point(22, 143)
+        Me.Label8.Location = New System.Drawing.Point(23, 212)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(34, 15)
+        Me.Label8.Size = New System.Drawing.Size(55, 18)
         Me.Label8.TabIndex = 12
-        Me.Label8.Text = "Email"
+        Me.Label8.Text = "Faculty"
         '
         'TextBox3
         '
         Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox3.Location = New System.Drawing.Point(25, 117)
+        Me.TextBox3.Location = New System.Drawing.Point(24, 177)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(346, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(393, 20)
         Me.TextBox3.TabIndex = 11
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label7.Location = New System.Drawing.Point(22, 101)
+        Me.Label7.Location = New System.Drawing.Point(24, 156)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(60, 15)
+        Me.Label7.Size = New System.Drawing.Size(80, 18)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "Last Name"
         '
@@ -140,16 +193,16 @@ Partial Class Form2
         'ProgressBar1
         '
         Me.ProgressBar1.BackColor = System.Drawing.Color.Maroon
-        Me.ProgressBar1.Location = New System.Drawing.Point(96, 342)
+        Me.ProgressBar1.Location = New System.Drawing.Point(96, 543)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(179, 21)
+        Me.ProgressBar1.Size = New System.Drawing.Size(261, 21)
         Me.ProgressBar1.TabIndex = 8
         '
         'Label5
         '
         Me.Label5.AutoSize = True
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(169, 379)
+        Me.Label5.Location = New System.Drawing.Point(197, 578)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 7
@@ -159,7 +212,7 @@ Partial Class Form2
         '
         Me.Label4.AutoSize = True
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(146, 366)
+        Me.Label4.Location = New System.Drawing.Point(178, 565)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(94, 13)
         Me.Label4.TabIndex = 6
@@ -168,11 +221,11 @@ Partial Class Form2
         'Button1
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(201, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold)
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI Black", 10.25!, System.Drawing.FontStyle.Bold)
         Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(79, 305)
+        Me.Button1.Location = New System.Drawing.Point(24, 468)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(214, 31)
+        Me.Button1.Size = New System.Drawing.Size(395, 41)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "Register"
         Me.Button1.UseVisualStyleBackColor = False
@@ -180,48 +233,49 @@ Partial Class Form2
         'TextBox2
         '
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox2.Location = New System.Drawing.Point(25, 262)
+        Me.TextBox2.Location = New System.Drawing.Point(24, 360)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(346, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(393, 20)
         Me.TextBox2.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(22, 246)
+        Me.Label3.Location = New System.Drawing.Point(21, 335)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 13)
+        Me.Label3.Size = New System.Drawing.Size(76, 18)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Password"
+        Me.Label3.Text = "Student ID"
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(219, Byte), Integer), CType(CType(216, Byte), Integer), CType(CType(216, Byte), Integer))
-        Me.TextBox1.Location = New System.Drawing.Point(25, 70)
+        Me.TextBox1.Location = New System.Drawing.Point(24, 124)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(346, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(393, 20)
         Me.TextBox1.TabIndex = 2
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(22, 54)
+        Me.Label2.Location = New System.Drawing.Point(23, 103)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 15)
+        Me.Label2.Size = New System.Drawing.Size(81, 18)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "First Name"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(201, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(156, 21)
+        Me.Label1.Location = New System.Drawing.Point(174, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(84, 25)
+        Me.Label1.Size = New System.Drawing.Size(123, 37)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Register"
         '
@@ -230,23 +284,43 @@ Partial Class Form2
         Me.Button2.BackColor = System.Drawing.Color.Transparent
         Me.Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), System.Drawing.Image)
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.Button2.Location = New System.Drawing.Point(12, 12)
+        Me.Button2.Location = New System.Drawing.Point(10, 11)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(53, 50)
         Me.Button2.TabIndex = 2
         Me.Button2.UseVisualStyleBackColor = False
         '
+        'Panel2
+        '
+        Me.Panel2.BackgroundImage = CType(resources.GetObject("Panel2.BackgroundImage"), System.Drawing.Image)
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Controls.Add(Me.Button2)
+        Me.Panel2.Location = New System.Drawing.Point(2, 1)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(494, 590)
+        Me.Panel2.TabIndex = 4
+        '
+        'SqlConnection1
+        '
+        Me.SqlConnection1.ConnectionString = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
+        Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
+        '
+        'SqlConnection2
+        '
+        Me.SqlConnection2.FireInfoMessageEventOnUserErrors = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(949, 591)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -262,11 +336,18 @@ Partial Class Form2
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label11 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents SqlConnection1 As SqlClient.SqlConnection
+    Friend WithEvents SqlConnection2 As SqlClient.SqlConnection
 End Class
