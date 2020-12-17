@@ -42,7 +42,7 @@ Public Class Form1
                 cmd.Parameters.AddWithValue("@pwd", TextBox2.Text)
                 Dim value = cmd.ExecuteScalar()
                 If value > 0 Then
-                    MessageBox.Show("Login sucessfully!")
+                    'MessageBox.Show("Login sucessfully!")
                     'Label11.Text = TextBox5.Text
                     Me.Hide()
 

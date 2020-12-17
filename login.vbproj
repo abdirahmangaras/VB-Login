@@ -140,5 +140,8 @@
   <ItemGroup>
     <None Include="Resources\Thomas edison 1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\how_do_i_vote.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

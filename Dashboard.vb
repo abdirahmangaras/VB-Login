@@ -1,8 +1,15 @@
 ﻿Imports System.Windows.Forms
+Imports System.Data.SqlClient
+Imports System.Data.Sql
+Imports System.IO
+Imports System.Configuration
+
 
 Public Class Dashboard
-
-
+    Dim connectionString As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
+    Dim cn As New SqlConnection(connectionString)
+    Dim cmd As New SqlCommand
+    Dim dr As SqlDataAdapter
 
 
 
@@ -28,6 +35,39 @@ Public Class Dashboard
         Me.Close()
         Form1.Show()
 
+
+
+
+
+
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+        Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
+        Dim sql As String = "INSERT INTO candidates (candName,Position,Votes) values (@candName,@Position,1)"
+        Using Conn As New SqlConnection(str)
+            Using cmd As New SqlCommand(sql, Conn)
+                Conn.Open()
+                cmd.Parameters.AddWithValue("@candName", ComboBox1.Text)
+                cmd.Parameters.AddWithValue("@Position", ComboBox2.Text)
+
+
+                Dim value = cmd.ExecuteScalar()
+
+                If value > 0 Then
+                    MessageBox.Show("Congartulation, You Voted!")
+                    Me.Hide()
+
+                    Dim dashboard As New Dashboard()
+                    dashboard.Show()
+                Else
+                    MessageBox.Show("Congartulation, You Voted!")
+                End If
+            End Using
+        End Using
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
@@ -41,6 +81,22 @@ Public Class Dashboard
     End Sub
 
     Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
+
+    End Sub
+
+    Private Sub CandiatesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CandiatesToolStripMenuItem.Click
+
+    End Sub
+
+    Private Sub VotersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VotersToolStripMenuItem.Click
 
     End Sub
 End Class

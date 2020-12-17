@@ -56,7 +56,7 @@ Public Class Form2
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox2.Text.Trim() <> "" Then
             Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
-            Dim sql As String = "INSERT INTO students (fname,lname,foculty,batch,studentid,pwd) values (@fname,@lname,@foculty, @batch ,@studentid,@pwd)"
+            Dim sql As String = "INSERT INTO students (firstName,lastName,semister,batch,studentid,pwd) values (@fname,@lname,@foculty, @batch ,@studentid,@pwd)"
             Using Conn As New SqlConnection(str)
                 Using cmd As New SqlCommand(sql, Conn)
                     Conn.Open()

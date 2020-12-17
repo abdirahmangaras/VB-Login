@@ -24,3 +24,17 @@ C:\Users\manow\Desktop\VB Projects\VB-Login\obj\Debug\login.xml
 C:\Users\manow\Desktop\VB Projects\VB-Login\obj\Debug\login.pdb
 C:\Users\manow\Desktop\VB Projects\VB-Login\obj\Debug\login.Dashboard.resources
 C:\Users\manow\Desktop\VB Projects\VB-Login\obj\Debug\login.Form2.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\bin\Debug\login.exe.config
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\bin\Debug\login.exe
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\bin\Debug\login.pdb
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\bin\Debug\login.xml
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.vbprojAssemblyReference.cache
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Form1.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Dashboard.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Form2.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Resources.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.vbproj.GenerateResource.cache
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.vbproj.CoreCompileInputs.cache
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.exe
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.xml
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.pdb
