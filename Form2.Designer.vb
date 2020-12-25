@@ -102,7 +102,7 @@ Partial Class Form2
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Semister 1", "Semister 2", "Semister 3"})
+        Me.ComboBox3.Items.AddRange(New Object() {"1", "2", "3", "4"})
         Me.ComboBox3.Location = New System.Drawing.Point(21, 300)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(400, 21)

@@ -71,9 +71,6 @@ Public Class Form1
 
             If TextBox1.Text = "" Then
 
-
-
-                MsgBox(" Fadlan ID soo gali")
                 TextBox1.Focus()
                 ProgressBar1.Value = 0
                 Label6.Text = ""
