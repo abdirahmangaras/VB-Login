@@ -24,6 +24,7 @@ Partial Class Dashboard
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         Me.StatusStrip = New System.Windows.Forms.StatusStrip()
         Me.ToolStripStatusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.ToolTip = New System.Windows.Forms.ToolTip(Me.components)
@@ -37,30 +38,19 @@ Partial Class Dashboard
         Me.DashboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.VotersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CandiatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.VoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SqlConnection1 = New System.Data.SqlClient.SqlConnection()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.StatusStrip.SuspendLayout()
         Me.MenuStrip.SuspendLayout()
+        Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'StatusStrip
@@ -81,7 +71,7 @@ Partial Class Dashboard
         '
         'MenuStrip
         '
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DashboardToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DashboardToolStripMenuItem, Me.VoteToolStripMenuItem})
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
         Me.MenuStrip.Padding = New System.Windows.Forms.Padding(7, 2, 0, 2)
@@ -143,150 +133,67 @@ Partial Class Dashboard
         Me.CandiatesToolStripMenuItem.Size = New System.Drawing.Size(109, 22)
         Me.CandiatesToolStripMenuItem.Text = "Report"
         '
-        'Label2
+        'VoteToolStripMenuItem
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label2.Location = New System.Drawing.Point(48, 283)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(211, 18)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "PRESIDENTAL CANDIDATES"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(45, 397)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(223, 27)
-        Me.Button1.TabIndex = 19
-        Me.Button1.Text = "Vote"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.VoteToolStripMenuItem.Name = "VoteToolStripMenuItem"
+        Me.VoteToolStripMenuItem.Size = New System.Drawing.Size(42, 20)
+        Me.VoteToolStripMenuItem.Text = "Vote"
         '
         'SqlConnection1
         '
         Me.SqlConnection1.FireInfoMessageEventOnUserErrors = False
         '
-        'ComboBox1
+        'Panel1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Abdirahman", "Hussien", "Shafie"})
-        Me.ComboBox1.Location = New System.Drawing.Point(45, 343)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(223, 21)
-        Me.ComboBox1.TabIndex = 50
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.PictureBox3)
+        Me.Panel1.Controls.Add(Me.PictureBox2)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Location = New System.Drawing.Point(1, 26)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(959, 492)
+        Me.Panel1.TabIndex = 66
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(685, 166)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(244, 250)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 2
+        Me.PictureBox3.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.login.My.Resources.Resources.how_do_i_vote
-        Me.PictureBox2.Location = New System.Drawing.Point(61, 89)
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(381, 166)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(194, 147)
+        Me.PictureBox2.Size = New System.Drawing.Size(255, 250)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 53
+        Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(28, 60)
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(86, 166)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(265, 437)
-        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.Size = New System.Drawing.Size(229, 250)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Location = New System.Drawing.Point(348, 60)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(265, 437)
-        Me.PictureBox3.TabIndex = 55
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Location = New System.Drawing.Point(654, 60)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(265, 437)
-        Me.PictureBox4.TabIndex = 56
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox5
-        '
-        Me.PictureBox5.Image = Global.login.My.Resources.Resources.how_do_i_vote
-        Me.PictureBox5.Location = New System.Drawing.Point(385, 89)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(194, 147)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 57
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.Image = Global.login.My.Resources.Resources.how_do_i_vote
-        Me.PictureBox6.Location = New System.Drawing.Point(692, 89)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(194, 147)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 58
-        Me.PictureBox6.TabStop = False
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Abdirahman", "Hussien", "Shafie"})
-        Me.ComboBox2.Location = New System.Drawing.Point(374, 343)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(223, 21)
-        Me.ComboBox2.TabIndex = 61
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(374, 397)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(223, 27)
-        Me.Button2.TabIndex = 60
-        Me.Button2.Text = "Vote"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label1.Location = New System.Drawing.Point(357, 283)
+        Me.Label1.Font = New System.Drawing.Font("Arial Black", 26.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(224, 44)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(249, 18)
-        Me.Label1.TabIndex = 59
-        Me.Label1.Text = "VICE PRESIDENTAL CANDIDATES"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Abdirahman", "Hussien", "Shafie"})
-        Me.ComboBox3.Location = New System.Drawing.Point(679, 343)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(223, 21)
-        Me.ComboBox3.TabIndex = 64
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(679, 397)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(223, 27)
-        Me.Button3.TabIndex = 63
-        Me.Button3.Text = "Vote"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.SystemColors.Control
-        Me.Label3.Location = New System.Drawing.Point(689, 283)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(199, 18)
-        Me.Label3.TabIndex = 62
-        Me.Label3.Text = "SECRATORY CANDIDATES"
+        Me.Label1.Size = New System.Drawing.Size(540, 50)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "STUDENT VOTING SYSTEM"
         '
         'Dashboard
         '
@@ -294,38 +201,23 @@ Partial Class Dashboard
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(63, Byte), Integer), CType(CType(146, Byte), Integer), CType(CType(201, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(960, 616)
-        Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox6)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
-        Me.Controls.Add(Me.PictureBox3)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip)
         Me.Controls.Add(Me.StatusStrip)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip
         Me.Name = "Dashboard"
-        Me.Text = "MDIParent1"
+        Me.Text = "Student Voting System"
         Me.StatusStrip.ResumeLayout(False)
         Me.StatusStrip.PerformLayout()
         Me.MenuStrip.ResumeLayout(False)
         Me.MenuStrip.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -343,20 +235,11 @@ Partial Class Dashboard
     Friend WithEvents DashboardToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents VotersToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CandiatesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents SqlConnection1 As SqlClient.SqlConnection
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Public WithEvents Panel1 As Panel
+    Friend WithEvents VoteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Label3 As Label
 End Class

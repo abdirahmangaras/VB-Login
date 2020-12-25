@@ -38,4 +38,5 @@ C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.vbproj.Co
 C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.exe
 C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.xml
 C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.pdb
-C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Result.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Form3.resources
+C:\Users\Abdirahman Garas\Desktop\VB Projects\VB-Login\obj\Debug\login.Form4.resources

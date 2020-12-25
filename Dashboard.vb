@@ -20,7 +20,7 @@ Public Class Dashboard
 
     Private m_ChildFormNumber As Integer
 
-    Private Sub RegisteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegisteToolStripMenuItem.Click
+    Public Sub RegisteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RegisteToolStripMenuItem.Click
         Form2.Show()
         Me.Hide()
 
@@ -31,125 +31,29 @@ Public Class Dashboard
 
     End Sub
 
-    Private Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
-        Me.Close()
+    Public Sub LogOutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles LogOutToolStripMenuItem.Click
+
         Form1.Show()
 
-
-
-
-
-
-
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
-        Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
-        Dim sql As String = "INSERT INTO president (cID, candName,Position,Votes) values (00, @candName,'President',1)"
-        Using Conn As New SqlConnection(str)
-            Using cmd As New SqlCommand(sql, Conn)
-                Conn.Open()
-                cmd.Parameters.AddWithValue("@candName", ComboBox1.Text)
 
 
 
-                Dim value = cmd.ExecuteScalar()
-
-                If value > 0 Then
-                    MessageBox.Show("Congartulation, You Voted!")
-                    Me.Hide()
-
-                    Dim dashboard As New Dashboard()
-                    dashboard.Show()
-                Else
-                    MessageBox.Show("Congartulation, You Voted!")
-                End If
-            End Using
-        End Using
-
+    Public Sub PictureBox1_Click_2(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        Form2.Show()
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-        Dim das As New Dashboard()
-
-        das.MdiParent = Me
+    Public Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        Form3.Show()
     End Sub
 
-    Private Sub StatusStrip_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles StatusStrip.ItemClicked
-
+    Public Sub VoteToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VoteToolStripMenuItem.Click
+        Form3.Show()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs)
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        Form4.Show()
 
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub PictureBox1_Click_1(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-    End Sub
-
-    Private Sub CandiatesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CandiatesToolStripMenuItem.Click
-
-    End Sub
-
-    Private Sub VotersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles VotersToolStripMenuItem.Click
-        Dim result As New Result()
-        result.Show()
-
-        Me.Hide()
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
-        Dim sql As String = "INSERT INTO sectratory (cID, candName,Position,Votes) values (00, @candName,'Sectratory',1)"
-        Using Conn As New SqlConnection(str)
-            Using cmd As New SqlCommand(sql, Conn)
-                Conn.Open()
-                cmd.Parameters.AddWithValue("@candName", ComboBox2.Text)
-
-
-
-                Dim value = cmd.ExecuteScalar()
-
-                If value > 0 Then
-                    MessageBox.Show("Congartulation, You Voted!")
-                    Me.Hide()
-
-                    Dim dashboard As New Dashboard()
-                    dashboard.Show()
-                Else
-                    MessageBox.Show("Congartulation, You Voted!")
-                End If
-            End Using
-        End Using
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
-        Dim sql As String = "INSERT INTO Vice (cID, candName,Position,Votes) values (00, @candName,'Vice',1)"
-        Using Conn As New SqlConnection(str)
-            Using cmd As New SqlCommand(sql, Conn)
-                Conn.Open()
-                cmd.Parameters.AddWithValue("@candName", ComboBox3.Text)
-
-
-
-                Dim value = cmd.ExecuteScalar()
-
-                If value > 0 Then
-                    MessageBox.Show("Congartulation, You Voted!")
-                    Me.Hide()
-
-                    Dim dashboard As New Dashboard()
-                    dashboard.Show()
-                Else
-                    MessageBox.Show("Congartulation, You Voted!")
-                End If
-            End Using
-        End Using
     End Sub
 End Class
