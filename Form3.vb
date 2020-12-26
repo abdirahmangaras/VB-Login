@@ -29,11 +29,13 @@ Public Class Form3
 
                 If value > 0 Then
                     MessageBox.Show("Congartulation, You Voted!")
-                    Me.Hide()
+
+
 
                     Dim dashboard As New Dashboard()
                     dashboard.Show()
                 Else
+                    Button1.Hide()
                     MessageBox.Show("Congartulation, You Voted!")
                 End If
             End Using
@@ -59,6 +61,7 @@ Public Class Form3
                     Dim dashboard As New Dashboard()
                     dashboard.Show()
                 Else
+                    Button2.Hide()
                     MessageBox.Show("Congartulation, You Voted!")
                 End If
             End Using
@@ -79,12 +82,14 @@ Public Class Form3
 
                 If value > 0 Then
                     MessageBox.Show("Congartulation, You Voted!")
-                    Me.Hide()
+
 
                     Dim dashboard As New Dashboard()
                     dashboard.Show()
                 Else
-                    MessageBox.Show("Congartulation, You Voted!")
+                    Me.Hide()
+                    Button3.Hide()
+                    MessageBox.Show("Congartulation, You Voting process is end!")
                 End If
             End Using
         End Using

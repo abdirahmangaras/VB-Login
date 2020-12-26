@@ -39,7 +39,7 @@ Public Class Form4
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Refresh.Click
         cn.Open()
         cmd.Connection = cn
-        cmd.CommandText = "select candName , sum(votes) as total_votes from president group by candName order by total_votes"
+        cmd.CommandText = "select candName , sum(votes) as total_votes from president group by candName order by total_votes desc"
         Dim rdr As SqlDataReader = cmd.ExecuteReader
         Dim dtable As New DataTable
 
@@ -59,7 +59,7 @@ Public Class Form4
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         cn.Open()
         cmd.Connection = cn
-        cmd.CommandText = "select candName , sum(votes) as total_votes from Vice group by candName order by total_votes"
+        cmd.CommandText = "select candName , sum(votes) as total_votes from Vice group by candName order by total_votes desc"
         Dim rdr As SqlDataReader = cmd.ExecuteReader
         Dim dtable As New DataTable
 
@@ -74,7 +74,7 @@ Public Class Form4
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         cn.Open()
         cmd.Connection = cn
-        cmd.CommandText = "select candName , sum(votes) as total_votes from sect group by candName order by total_votes"
+        cmd.CommandText = "select candName , sum(votes) as total_votes from sect group by candName order by total_votes desc"
         Dim rdr As SqlDataReader = cmd.ExecuteReader
         Dim dtable As New DataTable
 

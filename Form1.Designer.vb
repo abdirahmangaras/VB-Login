@@ -131,9 +131,9 @@ Partial Class Form1
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(65, 116)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 24)
+        Me.Label2.Size = New System.Drawing.Size(106, 24)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Email"
+        Me.Label2.Text = "Student ID"
         '
         'Label1
         '

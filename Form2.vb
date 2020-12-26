@@ -35,7 +35,14 @@ Public Class Form2
     End Sub
 
     Private Sub TextBox3_TextChanged(sender As Object, e As EventArgs) Handles TextBox3.TextChanged
+        If IsNumeric(TextBox3.Text) = True Then
+            MsgBox("Enter Only Text")
+            TextBox1.Focus()
+        End If
 
+        If Not IsNumeric(TextBox3.Text) = False Then
+
+        End If
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
@@ -112,7 +119,14 @@ Public Class Form2
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        If IsNumeric(TextBox1.Text) = True Then
+            MsgBox("Enter Only Text")
+            TextBox1.Focus()
+        End If
 
+        If Not IsNumeric(TextBox1.Text) = False Then
+
+        End If
     End Sub
 
     Private Sub Label10_Click(sender As Object, e As EventArgs) Handles Label10.Click
@@ -133,5 +147,8 @@ Public Class Form2
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
 
+    End Sub
+
+    Private Sub TextBox4_TextChanged(sender As Object, e As EventArgs) Handles TextBox4.TextChanged
     End Sub
 End Class

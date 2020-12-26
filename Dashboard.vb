@@ -42,6 +42,7 @@ Public Class Dashboard
 
     Public Sub PictureBox1_Click_2(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Form2.Show()
+
     End Sub
 
     Public Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
@@ -54,6 +55,10 @@ Public Class Dashboard
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Form4.Show()
+
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
     End Sub
 End Class
