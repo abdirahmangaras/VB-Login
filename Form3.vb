@@ -67,7 +67,7 @@ Public Class Form3
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim str As String = "Data Source=.;Initial Catalog=VBprojects;Integrated Security=True"
-        Dim sql As String = "INSERT INTO sectratory (cID, candName,Position,Votes) values (00, @candName,'secratory',1)"
+        Dim sql As String = "INSERT INTO sect (cID, candName,Position,Votes) values (00, @candName,'secratory',1)"
         Using Conn As New SqlConnection(str)
             Using cmd As New SqlCommand(sql, Conn)
                 Conn.Open()

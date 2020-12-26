@@ -49,9 +49,9 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.TextBox1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(280, 53)
+        Me.Panel1.Location = New System.Drawing.Point(293, 42)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(437, 414)
+        Me.Panel1.Size = New System.Drawing.Size(418, 425)
         Me.Panel1.TabIndex = 0
         '
         'Label6
@@ -110,7 +110,7 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(65, 174)
+        Me.Label3.Location = New System.Drawing.Point(65, 185)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(100, 24)
         Me.Label3.TabIndex = 3
@@ -129,7 +129,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Black
-        Me.Label2.Location = New System.Drawing.Point(65, 113)
+        Me.Label2.Location = New System.Drawing.Point(65, 116)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(62, 24)
         Me.Label2.TabIndex = 1

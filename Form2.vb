@@ -16,6 +16,7 @@ Public Class Form2
     End Sub
 
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+        Form1.Show()
 
     End Sub
 
@@ -63,19 +64,19 @@ Public Class Form2
                     cmd.Parameters.AddWithValue("@fname", TextBox1.Text)
                     cmd.Parameters.AddWithValue("@lname", TextBox3.Text)
                     cmd.Parameters.AddWithValue("@foculty", ComboBox1.Text)
-                    cmd.Parameters.AddWithValue("@batch", TextBox2.Text)
+                    cmd.Parameters.AddWithValue("@batch", ComboBox3.Text)
                     cmd.Parameters.AddWithValue("@studentid", TextBox2.Text)
                     cmd.Parameters.AddWithValue("@pwd", TextBox4.Text)
                     Dim value = cmd.ExecuteScalar()
 
                     If value > 0 Then
-                        MessageBox.Show("Signup sucessfully!")
+                        MessageBox.Show("Register successFull!")
                         Me.Hide()
 
                         Dim dashboard As New Dashboard()
                         dashboard.Show()
                     Else
-                        MessageBox.Show("Signup Unsucessfully!")
+                        MessageBox.Show("Register SuccessFully")
                     End If
                 End Using
             End Using
